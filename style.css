@@ -1,0 +1,152 @@
+/* Set background color and image */
+body {
+  background-color: #000000;
+  background-image: url("background.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #B9F2FF;
+  margin: 0;
+}
+
+/* Style header */
+header {
+  background-color: transparent;
+  border-bottom: 1px solid #000000;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 48px;
+  margin: 0;
+}
+
+/* Style navigation menu */
+nav {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #ffd700;
+}
+
+/* Style main content */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style form elements */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+}
+
+input[type="number"],
+select {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #ffd700;
+  color: #333;
+}
+
+input[type="text"] {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Style footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer p {
+  margin: 0;
+}
+.star {
+            width: 0.5px;
+            height: 0.5px;
+            background: #B9F2FF;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            animation: move 5s linear infinite;
+            opacity: 1;
+            animation-fill-mode: both;
+            z-index: -1;
+        }
+
+        @keyframes move {
+            0% {
+                transform: translate(-50%, -50%) rotate(0deg) translateZ(0);
+            }
+            50% {
+                transform: translate(-50%, -50%) rotate(360deg) scale(2) translateZ(0);
+            }
+            100% {
+                transform: translate(-50%, -50%) rotate(720deg) scale(1) translateZ(0);
+            }
+        }
+.color {
+  color: #B9F2FF;
+}
+
+/* Add a glow effect to the text */
+.glow {
+  text-shadow: 0 0 10px #B9F2FF, 0 0 20px #B9F2FF, 0 0 30px #B9F2FF;
+}
+
+/* Add a transition effect to smoothly stretch the text */
+.stretch {
+  transition: all 0.3s ease;
+}
+.stretch:hover {
+  transform: scale(1.2);
+}

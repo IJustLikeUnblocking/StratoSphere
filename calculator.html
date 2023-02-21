@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web Proxy</title>
+	<link rel="stylesheet" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9377323556278562"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+	<nav>
+		<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="proxy.html">Proxy</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="calculator.html">Calculator</a></li>
+		</ul>
+	</nav>
+	<main>
+		<h1>Calculator</h1>
+		<div class="calculator">
+			<input class="calculator-input" type="text" readonly>
+			<input class="calculator-result" type="text" readonly>
+			<div class="calculator-buttons">
+				<button class="button" onclick="appendValue('7')">7</button>
+				<button class="button" onclick="appendValue('8')">8</button>
+				<button class="button" onclick="appendValue('9')">9</button>
+				<button class="button" onclick="appendValue('/')">/</button>
+				<button class="button" onclick="clearInput()">C</button>
+				<button class="button" onclick="appendValue('4')">4</button>
+				<button class="button" onclick="appendValue('5')">5</button>
+				<button class="button" onclick="appendValue('6')">6</button>
+				<button class="button" onclick="appendValue('*')">*</button>
+				<button class="button" onclick="appendValue('(')">(</button>
+				<button class="button" onclick="appendValue('1')">1</button>
+				<button class="button" onclick="appendValue('2')">2</button>
+				<button class="button" onclick="appendValue('3')">3</button>
+				<button class="button" onclick="appendValue('-')">-</button>
+				<button class="button" onclick="appendValue(')')">)</button>
+				<button class="button" onclick="appendValue('0')">0</button>
+				<button class="button" onclick="appendValue('.')">.</button>
+				<button class="button" onclick="appendValue('+')">+</button>
+				<button class="button" onclick="calculateResult()">=</button>
+			</div>
+		</div>
+	</main>
+	<script src="calculator.js"></script>
+    <script>
+    const numStars = 2000; // set the number of stars
+        const container = document.body;
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+
+        for (let i = 0; i < numStars; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            container.appendChild(star);
+
+            // set star position
+            const x = Math.floor(Math.random() * width);
+            const y = Math.floor(Math.random() * height);
+            star.style.left = x + 'px';
+            star.style.top = y + 'px';
+
+            // add a random delay to start the animation at different times
+            const delay = Math.random() * 5;
+            star.style.animationDelay = delay + 's';
+        }
+  </script>
+</body>
+</html>

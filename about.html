@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>StratoSphere - About Us</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9377323556278562"
+     crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<h1>StratoSphere</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="proxy.html">Proxy</a></li>
+				<li><a href="about.html">About Us</a></li>
+				<li><a href="calculator.html">Calculator</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<h2>About Us</h2>
+		<p>We are a team of developers who are passionate about helping students access the content they need to succeed. We created this web proxy as a way to bypass school restrictions and enable students to learn and explore without limitations.</p>
+		<p>If you have any questions or feedback, please don't hesitate to <a href="contact.html">contact us</a>.</p>
+	</main>
+	<footer>
+	</footer>
+    <script>
+    const numStars = 2000; // set the number of stars
+        const container = document.body;
+        const width = window.innerWidth;
+        const height = window.innerHeight;
+
+        for (let i = 0; i < numStars; i++) {
+            const star = document.createElement('div');
+            star.classList.add('star');
+            container.appendChild(star);
+
+            // set star position
+            const x = Math.floor(Math.random() * width);
+            const y = Math.floor(Math.random() * height);
+            star.style.left = x + 'px';
+            star.style.top = y + 'px';
+
+            // add a random delay to start the animation at different times
+            const delay = Math.random() * 5;
+            star.style.animationDelay = delay + 's';
+        }
+  </script>
+</body>
+</html>
